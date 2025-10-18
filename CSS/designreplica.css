@@ -13,18 +13,25 @@
 }
 
 header {
-    width: 100%;
+    width: 95%;
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
 }
 
 header .logo {
-    margin: 0 15px 0 50px;
+    margin: 0 15px 0 0;
 }
 
-header .logo p {
+header .logo p a {
     font-family: helvetica;
     font-size: 30px;
     color: rgb(68, 7, 68);
@@ -39,6 +46,14 @@ header .links nav ul {
 header .links nav ul li {
     display: inline;
     margin-right: 20px;
+    padding: 5px 10px;
+}
+header .links nav ul li:hover {
+    transform: scale(1.1);
+}
+header .links nav ul li a select:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
 }
 
 header .links nav ul li a {
@@ -58,7 +73,7 @@ header .end nav ul li {
     margin-right: 20px;
 }
 
-header .end nav ul button {
+header .end nav ul #btn {
     background-color: rgb(71, 7, 71);
     color: white;
     font-size: 15px;
@@ -67,11 +82,84 @@ header .end nav ul button {
     border: none;
     margin: 0 20px 0 10px;
     border-radius: 25px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
 }
+
+header .end nav ul #btn:hover {
+    background-color: white;
+    color: rgb(71, 7, 71);
+    border: 1px solid rgb(71, 7, 71);
+    transform: scale(1.1);
+}
+
+header .info {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 15%;
+}
+
+header .info div {
+    width: 350px;
+    height: 30px;
+    background-color: white;
+    justify-content: center;
+    margin: 0 5px;
+    color: black;
+    border-style: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+    position: relative;
+    display: inline-block;
+}
+
+header .info div:hover {
+    transform: scale(0.95);
+    background-color: rgb(71, 7, 71);
+    color: white;
+}
+
+header .info div .services {
+    margin: 7px 0;
+    text-align: center; 
+}
+
+header .info div .services-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: lightgrey;
+    text-decoration: none;
+    list-style: none;
+    width: 350px;
+    padding: 10px 0;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba (0, 0, 0, 0.1);/* check */
+    transition: all ease-in-out 0.5s;
+}
+
+/* header .info div .services-list li {
+    cursor: pointer;
+    margin: 5px 0;
+} */
+
+/* header .info div .services-list li:hover {
+    background-color: rgb(100, 68, 100);
+    color: white;
+} */
+
+/* header .info div .services:hover .services-list {
+    display: flex;
+    flex-direction: column;
+} */
+
 
 main .hero{
     width: 100%;
-    height: 500px;
+    height: 700px;
     position: relative;
     background-color: rgb(43, 4, 43);
 }
@@ -90,7 +178,7 @@ main .hero .text {
     color: white;
     position: absolute;
     text-align: center;
-    top: 10%;
+    top: 25%;
     left: 27%;
 }
 
@@ -111,13 +199,24 @@ main .hero .text p {
     margin-bottom: 40px;
 }
 
-main .hero .text button {
+main .hero .text #btn2 {
     font-size: 14px;
     color: white;
     padding: 10px 28px;
     border-style: none;
     border-radius: 20px;
     background-color: rgb(71, 7, 71);
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+main .hero .text #btn2:hover {
+    background-color: white;
+    opacity: 0.9;
+    color: rgb(71, 7, 71);
+    font-weight: bold;
+    transform: scale(1.1);
+    border: 1px solid rgb(71, 7, 71);
 }
 
 main .content {
@@ -144,6 +243,8 @@ main .content .box div {
     justify-content: center;
     background-color: rgb(233, 231, 231);
     border: 1px solid lightgrey;
+    cursor: pointer;
+    /* box-shadow: rgba(0, 0, 0, 0.4); */
 }
 
 main .content .box div img {
@@ -164,13 +265,54 @@ main .content .box div p {
     margin: 10px 10px 15px 20px;
 }
 
-main .content .box div button {
+main .content .box div .btn {
     padding: 12px 30px;
     color: white;
     border-style: none;
     border-radius: 20px;
-    margin: 35px 0 0 -330px;
+    margin: 35px 0 0 -360px;
     background-color: rgb(71, 7, 71);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+main .content .box div .btn:hover {
+    background-color: white;
+    opacity: 0.9;
+    color: rgb(71, 7, 71);
+    transition: all ease-in-out 0.5s;
+    border: 1px solid rgb(71, 7, 71);
+    font-weight: bold;
+}
+
+main .partners{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .partners h1 {
+    margin: 30px 0;
+    font-size: 35px;
+    color: rgb(71, 7, 71);
+    font-style: bold;
+}
+
+main .partners .org {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .partners .org .firms {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(71, 7, 71);
+    border-radius: 50%;
+    margin: 10px 20px;
+    border: 1px solid black;
+    text-align: center;
 }
 
 main .end {
@@ -204,7 +346,7 @@ main .end div p {
     margin-bottom: 30px;
 }
 
-main .end div button {
+main .end div #btn3 {
     margin-top: 35px;
     padding: 12px 25px;
     border-style: none;
@@ -213,6 +355,17 @@ main .end div button {
     background-color: white;
     font-size: 14px;
     font-weight: bold;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+main .end div #btn3:hover {
+    background-color: rgb(71, 7, 71);
+    color: white;
+    font-weight: bold;
+    border: 1px solid rgb(71, 7, 71);
+    transition: all ease-in-out 0.5s;
+    opacity: 0.9;
 }
 
 footer {
@@ -236,6 +389,11 @@ footer .top div h2 {
 
 footer .top div nav ul li {
     margin-bottom: 20px;
+    cursor: pointer;
+}
+footer .top div nav ul li:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
 }
 
 footer .top div nav ul li a {
@@ -246,7 +404,7 @@ footer .top div p {
     color: rgb(71, 7, 71);
 }
 
-footer .top div button {
+footer .top div #btn4 {
     margin-top: 30px;
     padding: 15px 30px;
     border-style: none;
@@ -255,11 +413,23 @@ footer .top div button {
     background-color: rgb(71, 7, 71);
     font-size: 14px;
     font-weight: bold;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+footer .top div #btn4:hover {
+    color: rgb(71, 7, 71);
+    background-color: white;
+    border: 1px solid rgb(71, 7, 71);
+    font-weight: bold;
+    transition: all ease-in-out 0.5s;
 }
 
 footer .bottom {
     width: 100%;
-    height: 90px;
+    height: 125px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -277,9 +447,35 @@ footer .bottom .news p {
     color: rgb(71, 7, 71);
 }
 
+footer .bottom .news #btn5 {
+    color: white;
+    background-color: rgb(71, 7, 71);
+    margin: 5px 10px;
+    border-style: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+footer .bottom .news #btn5:hover {
+    color: rgb(71, 7, 71);
+    background-color: white;
+    border: 1px solid rgb(71, 7, 71);
+    font-weight: bold;
+    transition: all ease-in-out 0.5s;
+}
+
+footer .bottom .news #btn5 a {
+    color: white;
+    font-size: 13px;
+}
+footer .bottom .news #btn5 a:hover {
+    color: rgb(71, 7, 71);
+}
 footer .bottom .news input {
     padding: 8px 100px 8px 13px;
-    color: white;
+    color: black;
 }
 
 footer .bottom .socials nav ul li {
@@ -292,4 +488,14 @@ footer .bottom .socials nav ul li a {
     color: rgb(44, 7, 44);
     font-weight: bold;
     font-size: 18px;
+}
+
+i {
+    cursor: pointer;
+}
+
+i:hover {
+    transition: all ease-in-out 0.5s;
+    color: rgb(15, 15, 15);
+    transform: scale(1.5);
 }
