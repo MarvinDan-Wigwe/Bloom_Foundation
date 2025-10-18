@@ -251,6 +251,7 @@ main .content .box div img {
     width: 100%;
     height: 100%;
     opacity: 0.9;
+    object-fit: cover;
 }
 
 main .content .box div h1 {
@@ -290,6 +291,7 @@ main .partners{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(to right, rgb(223, 215, 216), rgb(186, 176, 238));
 }
 
 main .partners h1 {
@@ -306,19 +308,28 @@ main .partners .org {
 }
 
 main .partners .org .firms {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(71, 7, 71);
+    width: 150px;
+    height: 150px;
+    background-color: black;
     border-radius: 50%;
-    margin: 10px 20px;
+    margin: 10px 15px 35px 15px;
     border: 1px solid black;
+    border-style: none;
     text-align: center;
+    opacity: 1;
+}
+
+main .partners .org .firms img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 main .end {
     width: 100%;
     height: 500px;
-    margin-top: 60px;
+    margin-top: 0px;
     position: relative;
 }
 
