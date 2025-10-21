@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    width: 95%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    margin-top: 10px;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(180, 122, 101);
+    position: fixed;
+    z-index: 1;
+}
+
+header .logo {
+    margin: 0 15px 0 0;
+}
+
+header .logo p a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    font-size: 30px;
+    color: rgb(68, 7, 68);
+    font-weight: bold;
+    font-style: italic;
+}
+
+header .links nav ul {
+    margin-right: 100px;
+}
+
+header .links nav ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 5px 10px;
+}
+header .links nav ul li:hover {
+    transform: scale(1.1);
+}
+
+
+header .links nav ul li a select:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
+}
+
+header .links nav ul li a {
+    color: black;
+    font-size: 14px;
+}
+
+header .links ul li a select {
+    border: none;
+}
+
+header .end {
+    margin-right: 50px;
+}
+header .end nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header .end nav ul #btn {
+    background-color: rgb(71, 7, 71);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 35px;
+    border: none;
+    margin: 0 20px 0 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all ease-in-out 0.5s;
+}
+
+header .end nav ul #btn:hover {
+    background-color: white;
+    color: rgb(71, 7, 71);
+    border: 1px solid rgb(71, 7, 71);
+    transform: scale(1.1);
+}
+
+
+main {
+    width: 100%;
+    height: 700px;
+}
+
+footer {
+    width: 100%;
+}
+
+footer .top {
+    height: 470px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .top div {
+    width: 20%;
+    margin: 60px 10px 30px 20px;
+}
+
+footer .top div h2 {
+    color: black;
+    font-size: 30px;
+}
+
+footer .top div ul li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}/*  */
+
+footer .top div ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer .top div ul .about-us a{
+    font-style: bold;
+    font-size: 16px;
+}
+
+footer .top div ul .program a{
+    font-style: bold;
+    font-size: 16px;
+}
+
+footer .top div ul .quick-links a{
+    font-style: bold;
+    font-size: 16px;
+}
+
+footer .top div ul .get-involved a{
+    font-style: bold;
+    font-size: 16px;
+}
+footer .top div p {
+    color: rgb(71, 7, 71);
+}
+
+footer .top div #btn4 {
+    margin-top: 30px;
+    padding: 15px 30px;
+    border-style: none;
+    border-radius: 25px;
+    color: white;
+    background-color: rgb(71, 7, 71);
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+footer .top div #btn4:hover {
+    color: rgb(71, 7, 71);
+    background-color: white;
+    border: 1px solid rgb(71, 7, 71);
+    font-weight: bold;
+    transition: all ease-in-out 0.5s;
+}
+
+footer .bottom {
+    width: 100%;
+    height: 125px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(212, 116, 212);
+}
+
+footer .bottom .news {
+    margin: 0 20px;
+}
+
+footer .bottom .news p {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: rgb(71, 7, 71);
+}
+
+footer .bottom .news #btn5 {
+    color: white;
+    background-color: rgb(71, 7, 71);
+    margin: 5px 10px;
+    border-style: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+footer .bottom .news #btn5:hover {
+    color: rgb(71, 7, 71);
+    background-color: white;
+    border: 1px solid rgb(71, 7, 71);
+    font-weight: bold;
+    transition: all ease-in-out 0.5s;
+}
+
+footer .bottom .news #btn5 a {
+    color: white;
+    font-size: 13px;
+}
+footer .bottom .news #btn5 a:hover {
+    color: rgb(71, 7, 71);
+}
+footer .bottom .news input {
+    padding: 8px 100px 8px 13px;
+    color: black;
+}
+
+footer .bottom .socials nav ul li {
+    display: inline;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+footer .bottom .socials nav ul li a {
+    color: rgb(44, 7, 44);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+i {
+    cursor: pointer;
+}
+
+i:hover {
+    transition: all ease-in-out 0.5s;
+    color: rgb(15, 15, 15);
+    transform: scale(1.5);
+}

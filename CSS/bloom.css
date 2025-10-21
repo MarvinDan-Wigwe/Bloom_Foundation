@@ -32,7 +32,7 @@ header .logo {
 }
 
 header .logo p a {
-    font-family: helvetica;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
     font-size: 30px;
     color: rgb(68, 7, 68);
     font-weight: bold;
@@ -51,6 +51,8 @@ header .links nav ul li {
 header .links nav ul li:hover {
     transform: scale(1.1);
 }
+
+
 header .links nav ul li a select:hover {
     transform: scale(1.1);
     transition: all ease-in-out 0.5s;
@@ -126,6 +128,14 @@ header .info div .services {
     text-align: center; 
 }
 
+header .info div .services a{
+    color: black;
+}
+
+header .info div .services a:hover {
+    color: white;
+}
+
 header .info div .services-list {
     display: none;
     position: absolute;
@@ -164,10 +174,11 @@ main .hero{
     background-color: rgb(43, 4, 43);
 }
 
-main img {
+main .hero img {
     width: 100%;
     height: 100%;
     opacity: 0.55;
+    object-fit: cover;
 }
 
 main .hero .text {
@@ -308,8 +319,8 @@ main .partners .org {
 }
 
 main .partners .org .firms {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background-color: black;
     border-radius: 50%;
     margin: 10px 15px 35px 15px;
@@ -331,12 +342,14 @@ main .end {
     height: 500px;
     margin-top: 0px;
     position: relative;
+    background-color: black;
 }
 
 main .end img {
     width: 100%;
     height: 100%;
-    opacity: 0.9;
+    opacity: 0.6;
+    object-fit: cover;
 }
 
 main .end div {
@@ -384,32 +397,56 @@ footer {
 }
 
 footer .top {
-    height: 450px;
+    height: 470px;
     display: flex;
     justify-content: space-evenly;
 }
 
 footer .top div {
-    width: 25%;
-    margin: 100px 40px 50px 60px;
+    width: 20%;
+    margin: 60px 10px 30px 20px;
 }
+
 footer .top div h2 {
-    color: rgb(71, 7, 71);
+    color: black;
     font-size: 30px;
 }
 
-footer .top div nav ul li {
-    margin-bottom: 20px;
+footer .top div ul li {
+    margin-bottom: 10px;
     cursor: pointer;
-}
-footer .top div nav ul li:hover {
-    transform: scale(1.1);
-    transition: all ease-in-out 0.5s;
+}/*  */
+
+footer .top div ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
 }
 
-footer .top div nav ul li a {
-    color: rgb(71, 7, 71);
+footer .top div ul .about-us a{
+    font-style: bold;
+    font-size: 16px;
 }
+
+footer .top div ul .program a{
+    font-style: bold;
+    font-size: 16px;
+}
+
+footer .top div ul .quick-links a{
+    font-style: bold;
+    font-size: 16px;
+}
+
+footer .top div ul .get-involved a{
+    font-style: bold;
+    font-size: 16px;
+}
+
+/* footer .top div ul li:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
+} */
 
 footer .top div p {
     color: rgb(71, 7, 71);
