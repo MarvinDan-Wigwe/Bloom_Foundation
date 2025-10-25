@@ -96,30 +96,26 @@ header .end nav ul #btn:hover {
 }
 
 
-main {
+main{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 main .hero {
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
     align-items: center;
-    background: linear-gradient(to bottom, rgb(37, 37, 81), rgb(42, 42, 172));
+    background: linear-gradient(to bottom, rgb(35, 35, 105), rgb(40, 40, 170));
 }
-
-main .hero .title {
-    margin: 200px  0 10px 20px;
+main .hero .top {
+    margin: 140px  0 10px 20px;
 }
-main .hero .title p {
+main .hero .top p {
     color: white;
     font-size: 25px;
     margin: 0 0 10px 20px;
 }
-main .hero .title h1 {
+main .hero .top h1 {
     color: white;
     font-size: 57px;
     margin-left: 20px;
@@ -127,121 +123,67 @@ main .hero .title h1 {
 
 main .content {
     width: 100%;
-    background-color: rgb(190, 205, 250);
-}
-
-main .content .image1 {
-    width: 100%;
-    height: 300px;
-    background-color: rgb(20, 20, 60);
-    filter: brightness(85%);
-    background-image: url(../IMAGES/ABOUT/aima-yasir-etddZKDfc9k-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
-    align-items: center;
-}
-main .content .image1 p {
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    color: white;
-    font-weight: bold;
-    margin-top: 18%;
-    margin-left: 30px;
-}
-main .content .image2 {
-    width: 100%;
-    height: 350px;
-    background-color: rgb(20, 20, 60);
-    filter: brightness(85%);
-    background-image: url(../IMAGES/ABOUT/aima-yasir-etddZKDfc9k-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-
-main .content .image2 p {
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    color: white;
-    font-weight: bold;
-    margin-top: 20%;
-    margin-left: 30px;
-}
-
-main .content .image3 {
-    width: 100%;
-    height: 350px;
-    background-color: rgb(20, 20, 60);
-    filter: brightness(85%);
-    background-image: url(../IMAGES/ABOUT/aima-yasir-etddZKDfc9k-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-
-main .content .image3 p {
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    color: white;
-    font-weight: bold;
-    margin-top: 20%;
-    margin-left: 30px;
-}
-
-main .content .image4 {
-    width: 100%;
-    height: 350px;
-    background-color: rgb(20, 20, 60);
-    filter: brightness(85%);
-    background-image: url(../IMAGES/ABOUT/aima-yasir-etddZKDfc9k-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-
-main .content .image4 p {
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    color: white;
-    font-weight: bold;
-    margin-top: 20%;
-    margin-left: 30px;
-}
-
-main .content .text {
-    width: 100%;
-    height: 220px;
-    padding: 60px 30px 30px 30px;
-    font-size: 20px;
-    line-height: 1.4;
-    font-weight: bold;
-    color: rgb(20, 20, 60);
-    background-color: rgb(210, 225, 270);
-}
-
-main .bottom {
-    width: 100%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: rgb(190, 205, 250);
+    background-color: rgb(190, 205, 250);    
+}
+main .content .text {
+    width: 45%;
+    margin: 30px 20px 0 20px;
+}
+main .content .text h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+    color: rgb(20, 20, 60);
+}
+main .content .text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgb(20, 20, 60);
+}
+main > .content > .form {
+    width: 45%;
+    margin: 30px 20px 40px 20px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 20px;
+    background-color: rgb(100, 100, 150);
+}
+main > .content > .form > input {
+    padding: 15px 100px 15px 15px;
+    margin: 10px 5px;
+    width: 90%;
+    border-radius: 20px;
+    border-style: none;
+}
+#text {
+    padding: 10px 100px 10px 20px;
+    width: 90%;
+    height: 250px;
+    margin: 10px 5px;
+    border-radius: 20px;
+}
+#submit  {
+    padding: 10px 30px;
+    color: white;
+    background-color: rgb(20, 20, 60);
+    border-style: none;
+    border-radius: 20px;
+    margin: 10px 0 10px 410px;
+    cursor: pointer;
+    transition: all ease-in-out 0.4s;
+}
+#submit:hover {
+    color: rgb(20, 20, 60);
+    background-color: white;
+    border: 1px solid rgb(20, 20, 60);
+    transform: scale(1.1);
 }
 
-main .bottom div {
-    width: 25%;
-    height: 300px;
-    background-color: burlywood;
-    border-radius: 30px;
-    margin: 20px 15px;
-}
 
 footer {
     width: 100%;
@@ -322,7 +264,6 @@ footer .top div #btn4:hover {
     border: 1px solid rgb(20, 20, 60);
     font-weight: bold;
     transform: scale(1.1);
-    opacity: 0.7;
 }
 
 footer .bottom {
@@ -333,7 +274,7 @@ footer .bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(100, 100, 150);
+    background-color: rgb(145, 155, 200);
 }
 
 footer .bottom .news {

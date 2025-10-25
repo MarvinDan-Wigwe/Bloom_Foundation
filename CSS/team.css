@@ -95,154 +95,89 @@ header .end nav ul #btn:hover {
     transform: scale(1.1);
 }
 
-
-main {
+main{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 main .hero {
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
     align-items: center;
     background: linear-gradient(to bottom, rgb(37, 37, 81), rgb(42, 42, 172));
 }
-
-main .hero .title {
-    margin: 200px  0 10px 20px;
+main .hero .top {
+    margin: 140px  0 10px 20px;
 }
-main .hero .title p {
+main .hero .top p {
     color: white;
     font-size: 25px;
     margin: 0 0 10px 20px;
 }
-main .hero .title h1 {
+main .hero .top h1 {
     color: white;
     font-size: 57px;
     margin-left: 20px;
 }
 
+/* MAIN CONTENT */
 main .content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(190, 205, 250);
 }
-
-main .content .image1 {
-    width: 100%;
-    height: 300px;
-    background-color: rgb(20, 20, 60);
-    filter: brightness(85%);
-    background-image: url(../IMAGES/ABOUT/aima-yasir-etddZKDfc9k-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-main .content .image1 p {
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    color: white;
-    font-weight: bold;
-    margin-top: 18%;
-    margin-left: 30px;
-}
-main .content .image2 {
-    width: 100%;
+main .content div {
+    width: 350px;
     height: 350px;
-    background-color: rgb(20, 20, 60);
-    filter: brightness(85%);
-    background-image: url(../IMAGES/ABOUT/aima-yasir-etddZKDfc9k-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
+    margin: 50px 0;
+    background-color: grey;
+    border-radius: 50%;
 }
-
-main .content .image2 p {
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    color: white;
-    font-weight: bold;
-    margin-top: 20%;
-    margin-left: 30px;
-}
-
-main .content .image3 {
+main .content div img {
     width: 100%;
-    height: 350px;
-    background-color: rgb(20, 20, 60);
-    filter: brightness(85%);
-    background-image: url(../IMAGES/ABOUT/aima-yasir-etddZKDfc9k-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-main .content .image3 p {
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    color: white;
+main .content div h2 {
+    font-size: 30px;
+    margin-left: 30%;
+}
+main .content div p {
+    font-size: 15px;
     font-weight: bold;
-    margin-top: 20%;
-    margin-left: 30px;
+    margin-left: 25%
 }
 
-main .content .image4 {
-    width: 100%;
-    height: 350px;
-    background-color: rgb(20, 20, 60);
-    filter: brightness(85%);
-    background-image: url(../IMAGES/ABOUT/aima-yasir-etddZKDfc9k-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-
-main .content .image4 p {
-    display: flex;
-    align-items: center;
-    font-size: 35px;
-    color: white;
-    font-weight: bold;
-    margin-top: 20%;
-    margin-left: 30px;
-}
-
-main .content .text {
-    width: 100%;
-    height: 220px;
-    padding: 60px 30px 30px 30px;
-    font-size: 20px;
-    line-height: 1.4;
-    font-weight: bold;
-    color: rgb(20, 20, 60);
-    background-color: rgb(210, 225, 270);
-}
-
-main .bottom {
+main .team {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgb(190, 205, 250);
 }
-
-main .bottom div {
-    width: 25%;
+#team-info {
+    width: 90%;
     height: 300px;
-    background-color: burlywood;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(160, 160, 240);
     border-radius: 30px;
-    margin: 20px 15px;
+    padding: 15px;
+}
+#team-info p {
+    line-height: 1.8;
+    font-size: 15px;
 }
 
+
+/* FOOTER */
 footer {
     width: 100%;
     background: linear-gradient(to bottom, rgb(35, 35, 105), rgb(40, 40, 170));
@@ -322,7 +257,6 @@ footer .top div #btn4:hover {
     border: 1px solid rgb(20, 20, 60);
     font-weight: bold;
     transform: scale(1.1);
-    opacity: 0.7;
 }
 
 footer .bottom {
@@ -333,7 +267,7 @@ footer .bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(100, 100, 150);
+    background-color: rgb(145, 155, 200);
 }
 
 footer .bottom .news {
