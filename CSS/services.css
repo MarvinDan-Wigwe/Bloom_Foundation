@@ -105,14 +105,14 @@ main {
 
 main .hero {
     width: 100%;
-    height: 400px;
+    height: 250px;
     display: flex;
     align-items: center;
     background: linear-gradient(to bottom, rgb(37, 37, 81), rgb(42, 42, 172));
 }
 
 main .hero .title {
-    margin: 200px  0 10px 20px;
+    margin: 100px  0 10px 20px;
 }
 main .hero .title p {
     color: white;
@@ -238,9 +238,32 @@ main .bottom {
 main .bottom div {
     width: 25%;
     height: 300px;
-    background-color: burlywood;
+    background-color: rgb(160, 160, 240);
     border-radius: 30px;
     margin: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+main .bottom div i {
+    font-size: 75px;
+    color: rgb(20, 20, 60);
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+main .bottom div i:hover {
+    transform: none;
+    transition: none;
+}
+
+main .bottom div h2 {
+    color: rgb(20, 20, 60);
+    margin-bottom: 15px;
+}
+main .bottom div p {
+    color: rgb(20, 20, 60);
 }
 
 footer {
