@@ -12,6 +12,8 @@
     min-height: 100vh;
 }
 
+
+/* HEADER */
 header {
     width: 95%;
     height: 70px;
@@ -22,7 +24,7 @@ header {
     margin-left: 30px;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(190, 205, 250);
     position: fixed;
     z-index: 1;
 }
@@ -81,6 +83,7 @@ header .links nav ul li a {
 
 header .links ul li a select {
     border: none;
+    background-color: rgb(190, 205, 250);
 }
 
 header .end {
@@ -110,7 +113,7 @@ header .end nav ul #btn a:hover {
     color: rgb(20, 20, 60);
 }
 header .end nav ul #btn:hover {
-    background-color: white;
+    background-color: rgb(190, 205, 250);
     color: rgb(20, 20, 60);
     border: 1px solid rgb(20, 20, 60);
     transform: scale(1.1);
@@ -126,7 +129,7 @@ header .info {
 header .info div {
     width: 350px;
     height: 30px;
-    background-color: white;
+    background-color: rgb(210, 220, 245);
     justify-content: center;
     margin: 0 5px;
     color: black;
@@ -188,6 +191,7 @@ header .info div .services-list {
 } */
 
 
+/* MAIN: HERO */
 main .hero{
     width: 100%;
     height: 700px;
@@ -252,9 +256,11 @@ main .hero .text #btn2:hover {
     border: 1px solid rgb(20, 20, 60);
 }
 
+
+/* MAIN: CONTENT */
 main .content {
     width: 100%;
-    background-color: lightgray;
+    background-color: rgb(210, 220, 245);
 }
 
 main .content .box {
@@ -274,7 +280,7 @@ main .content .box div {
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 4px 0 rgba(20, 20, 20, 0.5);
-    background-color: rgb(233, 231, 231);
+    background-color: rgb(220, 220, 280);
     cursor: pointer;
 }
 
@@ -372,8 +378,9 @@ main .partners .org .firms img {
 }
 #partner-signup button:hover {
     transform: scale(1.1);
+    font-weight: bold;
     color: rgb(37, 37, 81);
-    background-color: white;
+    background: linear-gradient(to right, rgb(193, 191, 254), rgb(157, 148, 206));
     border: 1px solid rgb(37, 37, 81);
 }
 
@@ -432,6 +439,8 @@ main .end div #btn3:hover {
     opacity: 0.9;
 }
 
+
+/* FOOTER */
 footer {
     width: 100%;
     background: linear-gradient(to bottom, rgb(35, 35, 105), rgb(40, 40, 170));
@@ -454,15 +463,15 @@ footer .top div h2 {
 }
 
 footer .top div ul li {
-    margin-bottom: 10px;
     cursor: pointer;
-}/*  */
+    margin-bottom: 10px;
+}
 
 footer .top div ul li a {
     color: black;
-    text-decoration: none;
     font-size: 12px;
     color: white;
+    text-decoration: none;
 }
 
 footer > .top > div > h4 > i {
@@ -470,8 +479,8 @@ footer > .top > div > h4 > i {
 }
 
 footer .top div ul .about-us a{
-    font-style: bold;
     font-size: 16px;
+    font-style: bold;
 }
 
 footer .top div ul .program a{
@@ -493,34 +502,33 @@ footer .top div p {
 }
 
 footer .top div #btn4 {
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
     margin-top: 30px;
     padding: 15px 30px;
     border-style: none;
     border-radius: 25px;
-    color: white;
-    background-color: rgb(20, 20, 60);
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
     transition: all ease-in-out 0.5s;
+    background-color: rgb(20, 20, 60);
 }
 
 footer .top div #btn4:hover {
+    font-weight: bold;
+    transform: scale(1.1);
     color: rgb(20, 20, 60);
     background-color: white;
     border: 1px solid rgb(20, 20, 60);
-    font-weight: bold;
-    transform: scale(1.1);
-    opacity: 0.7;
 }
 
 footer .bottom {
     width: 100%;
     height: 150px;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
     display: flex;
     align-items: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     justify-content: space-between;
     background-color: rgb(100, 100, 150);
 }
@@ -530,22 +538,22 @@ footer .bottom .news {
 }
 
 footer .bottom .news p {
+    color: white;
     font-size: 15px;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 8px;
-    color: white;
 }
 
 footer .bottom .news #btn5 {
     color: white;
-    background-color: rgb(20, 20, 60);
     margin: 5px 10px;
     border-style: none;
     border-radius: 15px;
     padding: 5px 10px;
     cursor: pointer;
     transform: scale(1.1);
+    background-color: rgb(20, 20, 60);
 }
 
 footer .bottom .news #btn5:hover {
