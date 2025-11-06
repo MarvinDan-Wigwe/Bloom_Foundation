@@ -53,21 +53,23 @@ header .logo p a img {
     border-radius: 50%;
 }
 
-header div h2 {
-    font-size: 14px;
-}
-
 header .links nav ul {
-    margin-right: 100px;
+    margin-right: 80px;
 }
-
+header .links nav ul li:hover{
+    transform: scale(1.1);
+}
 header .links nav ul li {
     display: inline;
     margin-right: 20px;
-    padding: 5px 10px;
+    transition: all ease-in-out 0.5s;
 }
-header .links nav ul li:hover {
+header .links nav ul li a {
+    color: rgb(20, 20, 60);
+}
+header .links nav ul li a:hover {
     transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
 }
 
 
@@ -673,30 +675,22 @@ i:hover {
         display: none;
     }
 
-    /* HEADER INFO */
+    /* HEADER links */
     header .info {
-        top: 9%;
-        left: 10%;
+        display: none;
     }
-    header .info div {
-        width: 100px;
-        height: 15px;
-        margin: 0 4px;
-        border-radius: 10px;
-        text-align: center;
+    header .links nav ul li a {
+        font-size: 12px;
+    }
+    header .links nav ul .languages {
+        display: none;
     }
     header .links nav ul li a select{
         font-size: 12px;
     }
-    header .info div .services {
-        margin: -4px 0 0 8px;
-    }
-    header .info div .services a {
-        font-size: 10px;
-    }
     /* MAIN HERO*/
     main .hero {
-        height: 480px;
+        height: 500px;
     }
     main .hero .text {
         top: 22%;
@@ -794,7 +788,7 @@ i:hover {
 
     /* MAIN END */
     main .end {
-        height: 300px;
+        height: 330px;
     }
     main .end div {
         top: 18%;
@@ -815,12 +809,12 @@ i:hover {
 
     /* FOOTER TOP */
     footer .top {
-        height: 300px;
+        height: 350px;
     }
     footer .top div {
         width: 20%;
         font-size: 12px;
-        margin: 15px 5px 5px 5px;
+        margin: 20px 5px 5px 5px;
     }
     footer .top div h2 {
         font-size: 12px;
