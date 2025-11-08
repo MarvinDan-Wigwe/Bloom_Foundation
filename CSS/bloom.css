@@ -122,7 +122,7 @@ header .end nav ul #btn:hover {
 }
 
 header .info {
-    display: flex;
+    display: none;/*  */
     justify-content: center;
     position: fixed;
     top: 14%;
@@ -216,7 +216,7 @@ main .hero .text {
     color: white;
     position: absolute;
     text-align: center;
-    top: 25%;
+    top: 20%;
     left: 18%;
     right: 18%;
 }
@@ -229,12 +229,12 @@ main .hero .text h3 {
 main .hero .text h1 {
     font-family: 'Franklin Gothic Medium';
     font-style: italic;
-    font-size: 45px;
+    font-size: 50px;
     margin-bottom: 35px;
 }
 
 main .hero .text p {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 40px;
 }
 
